@@ -643,23 +643,37 @@ footer {
         top: 20px;
     }
 
-    .burger:focus {
-        outline: none;
+    #check {
+        display: none;
     }
 
-    .burger:active {
+    #check:checked + .burger {
         outline: none;
         background-color: rgba(255, 220, 190, 1);
         box-shadow: 0px 0px 20px 10px rgba(255, 220, 190, 0.6);
         transition: all 0.5s;
     }
 
-    .burger:active [class*="burger-layer"] {
+    #check:checked + .burger [class*="burger-layer"] {
         background-color: rgb(200, 130, 70);
         transition: all 0.5s;
     }
 
-    .burger:active ~ ul {
+    #check:checked + .burger .burger-layer-1 {
+        transform: rotate(45deg);
+        top: 14px;
+    }
+
+    #check:checked + .burger .burger-layer-3 {
+        transform: rotate(-45deg);
+        top: 14px;
+    }
+
+    #check:checked + .burger .burger-layer-2 {
+        opacity: 0;
+    }
+
+    #check:checked + .burger ~ ul {
         opacity: 1;
         transition: all 1s;
     }
