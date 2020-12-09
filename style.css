@@ -449,6 +449,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-top: 15px;
         border-bottom: 15px solid rgba(200, 200, 255, 1);
         border-right: 15px solid rgba(200, 200, 255, 1);
         border-top-right-radius: 10%;
@@ -456,7 +457,6 @@ footer {
 
     .a-d-second {
         margin-top: 0;
-        padding-top: 15px;
         border-right: none;
         border-bottom: none;
         border-top: 15px solid rgba(200, 200, 255, 1);
@@ -616,12 +616,7 @@ footer {
     }
 
     .cover-description {
-        /* position: absolute; */
-        top: 275px;
-        left: 0;
-        right: 0;
-        padding: 0;
-        margin: 0 auto;
+        display: none;
     }
 
     .cover-title {
@@ -629,8 +624,8 @@ footer {
     }
 
     .cover-container h2 {
+        font-family: 'Cinzel', serif;
         margin-top: 125px;
-        margin-bottom: 25px;
     }
 
     .about-container {
@@ -647,7 +642,7 @@ footer {
 
     .about-image {
         display: flex;
-        height: 75vh;
+        height: 50vh;
         border-radius: 0;
         padding: 0;
         background-image: url(images/vintage-keyboard-typewriter-old.jpg);
