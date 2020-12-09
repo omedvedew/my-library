@@ -660,12 +660,12 @@ footer {
     }
 
     #check:checked + .burger .burger-layer-1 {
-        transform: rotate(45deg);
+        transform: rotate(225deg);
         top: 14px;
     }
 
     #check:checked + .burger .burger-layer-3 {
-        transform: rotate(-45deg);
+        transform: rotate(-225deg);
         top: 14px;
     }
 
