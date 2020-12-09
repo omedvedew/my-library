@@ -417,6 +417,11 @@ footer {
         border-top: 15px solid rgba(200, 200, 255, 1);
         background-image: url(images/img-02.jpg);
     }
+
+    .contacts a {
+        margin: 10px;
+        font-size: 14px;
+    }
 }
 
 /* laptop */
@@ -469,6 +474,11 @@ footer {
     .cover-container h2 {
         padding-right: 125px;
 
+    }
+
+    .contacts a {
+        margin: 10px;
+        font-size: 16px;
     }
 }
 
@@ -539,11 +549,16 @@ footer {
         border-right: 7px solid rgba(255, 255, 255, 0.8);
         border-top-left-radius: 50%;
         border-top-right-radius: 50%;
+        position: relative;
     }
 
     .cover-description {
+        position: absolute;
+        top: 275px;
+        left: 0;
+        right: 0;
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .cover-title {
@@ -552,7 +567,7 @@ footer {
 
     .cover-container h2 {
         margin-top: 125px;
-        margin-bottom: 25px;
+        margin-bottom: 115px;
     }
 
     .about-container {
@@ -583,6 +598,36 @@ footer {
 
     .about-description h2 {
         text-align: center;
+    }
+
+    .footer {
+        height: fit-content;
+        padding-bottom: 25px;
+        font-size: 10px;
+    }
+
+    .footer-container .row {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .social-links {
+        flex-direction: row;
+    }
+
+    .social-icon {
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+
+    .social-links-container {
+        flex: 0 0 100%;
+        width: 250px;
+    }
+
+    .contacts a {
+        margin: 15px;
     }
 }
 
