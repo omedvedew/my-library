@@ -344,6 +344,9 @@ footer {
 
 /* tablet */
 @media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
 
     .col-md-12 {
         flex: 0 0 100%;
@@ -566,6 +569,102 @@ footer {
 
 /* mobile */
 @media (max-width: 767px) {
+    .mobile-menu {
+        display: flex;
+        width: 100%;
+        height: fit-content;
+        justify-content: center;
+    }
+
+    .mobile-menu ul {
+        opacity: 0;
+        z-index: 1;
+        position: absolute;
+        top: 80px;
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(50, 50, 70, 0.8);
+        padding: 10px;
+        border-left: 5px solid rgba(255, 255, 255, 0.8);
+        border-right: 5px solid rgba(255, 255, 255, 0.8);
+        border-top-left-radius: 10%;
+        border-top-right-radius: 10%;
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
+        transition: all 1s;
+    }
+
+    .mobile-menu li {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        flex: 0 0 20%;
+        max-width: 15%;
+        margin: 5px;
+    }
+
+    .burger {
+        z-index: 2;
+        display: flex;
+        width: 40px;
+        height: 30px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        background: none;
+        border: none;
+        border-left: 2px solid rgba(255, 255, 255, 0.8);
+        border-right: 2px solid rgba(255, 255, 255, 0.8);
+        border-top-left-radius: 20%;
+        border-top-right-radius: 20%;
+        border-bottom-left-radius: 40%;
+        border-bottom-right-radius: 40%;
+        transition: all 1s;
+    }
+
+    [class*="burger-layer"] {
+        position: absolute;
+        top: 13px;
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 40%;
+        transition: all 1s;
+    }
+
+    .burger-layer-1 {
+        top: 6px;
+    }
+
+    .burger-layer-3 {
+        top: 20px;
+    }
+
+    .burger:focus {
+        outline: none;
+        background-color: rgba(255, 220, 190, 1);
+        box-shadow: 0px 0px 20px 10px rgba(255, 220, 190, 0.6);
+        transition: all 0.5s;
+    }
+
+    .burger:focus [class*="burger-layer"] {
+        background-color: rgb(200, 130, 70);
+        transition: all 0.5s;
+    }
+
+    .burger:focus ~ ul {
+        opacity: 1;
+        transition: all 1s;
+    }
+
+    .mobile-menu a {
+        text-decoration: none;
+        color: #8ca4d4;
+    }
+
     .col-xs-12 {
         flex: 0 0 100%;
         max-width: 100%;
@@ -595,6 +694,7 @@ footer {
 
     .logo a {
         font-size: 24px;
+        margin-bottom: 7px;
     }
 
     .cover-container-circle {
@@ -681,8 +781,8 @@ footer {
         height: fit-content;
         padding-bottom: 25px;
         font-size: 10px;
-        border-left: 7px solid rgba(200, 200, 255, 1);
-        border-right: 7px solid rgba(200, 200, 255, 1);
+        border-left: 7px solid rgba(255, 255, 255, 0.8);
+        border-right: 7px solid rgba(255, 255, 255, 0.8);
         border-bottom-left-radius: 30%;
         border-bottom-right-radius: 30%;
     }
