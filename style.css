@@ -470,6 +470,11 @@ nav {
         border-top-right-radius: 50%;
     }
 
+    .cover-description {
+        padding: 0;
+        margin: 0;
+    }
+
     .cover-title {
         padding-right: 0;
     }
