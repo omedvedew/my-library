@@ -553,7 +553,7 @@ footer {
     }
 
     .cover-description {
-        position: absolute;
+        /* position: absolute; */
         top: 275px;
         left: 0;
         right: 0;
@@ -567,7 +567,7 @@ footer {
 
     .cover-container h2 {
         margin-top: 125px;
-        margin-bottom: 115px;
+        margin-bottom: 25px;
     }
 
     .about-container {
