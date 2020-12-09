@@ -229,6 +229,59 @@ nav {
     border-top-right-radius: 30%;
 }
 
+.books-btn-container {
+    display: flex;
+    width: calc(100% + 30px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: -15px;
+    margin-right: -15px;
+    border-top-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+}
+
+[class*="-btn-container"] {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% + 30px);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: -15px;
+    margin-right: -15px;
+    border-top-right-radius: 28%;
+    border-bottom-left-radius: 31%;
+    z-index: 1;
+}
+
+[class*="to-"] {
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #8ca4d4;
+    display: block;
+    width: 100px;
+    height: 40px;
+    line-height: 33px;
+    text-align: center;
+    border-left: 3px solid #8ca4d4;
+    border-right: 3px solid #8ca4d4;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+    transition: all 1s;
+}
+
+[class*="to-"]:hover {
+    background-color: rgba(255, 255, 190, 1);
+    color: rgb(200, 130, 70);
+    border: transparent;
+    box-shadow: 0px 0px 30px 15px rgba(255, 230, 140, 0.6);
+    transition: all 0.5s;
+}
+
+
 /* FOOTER-FORMATTING */
 footer {
     background: linear-gradient(to top, black 0.5%,  rgba(18, 21, 27, 0.5));
@@ -480,6 +533,16 @@ footer {
         margin: 10px;
         font-size: 16px;
     }
+
+    [class*="-btn-container"] {
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    .about-image:hover [class*="-btn-container"] {
+        opacity: 1;
+        transition: all 0.5s;
+    }
 }
 
 /* desktop */
@@ -583,27 +646,50 @@ footer {
     }
 
     .about-image {
-        padding: 0;
-    }
-
-    .about-image img {
+        display: flex;
+        height: 75vh;
         border-radius: 0;
+        padding: 0;
+        background-image: url(images/vintage-keyboard-typewriter-old.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
+    .books-btn-container {
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
+    }
+    
     .a-i-second {
-        padding: 0;
         margin-top: 10px;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-image: url(images/img-02.jpg);
+    }
+
+    .authors-btn-container {
+        border-radius: 0;
+        width: 100%;
+        margin: 0;
     }
 
     .about-description h2 {
         text-align: center;
     }
 
+    footer {
+        margin-top: 0;
+        padding-top: 25px;
+    }
+
     .footer {
         height: fit-content;
         padding-bottom: 25px;
         font-size: 10px;
+        border-left: 7px solid rgba(200, 200, 255, 1);
+        border-right: 7px solid rgba(200, 200, 255, 1);
+        border-bottom-left-radius: 30%;
+        border-bottom-right-radius: 30%;
     }
 
     .footer-container .row {
