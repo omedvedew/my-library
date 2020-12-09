@@ -64,6 +64,12 @@ body {
     font-family: 'Cinzel', serif;
     font-size: 36px;
     color: #5773ac;
+    transition: all 1s;
+}
+
+.logo a:hover {
+    color: rgb(200, 130, 70);
+    transition: all 0.5s;
 }
 
 nav {
@@ -80,10 +86,12 @@ nav {
     font-size: 16px;
     color: #8ca4d4;
     text-align: center;
+    transition: all 0.5s;
 }
 
 .menu a:hover {
     color: rgb(200, 130, 70);
+    transition: all 0.3s;
 }
 
 .auth {
@@ -99,18 +107,23 @@ nav {
     border-radius: 25%;
     color: #8ca4d4;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: all 1s;
 }
 
 .auth button:hover {
     color: rgb(200, 130, 70);
     border: 1px solid  rgb(200, 130, 70);
     cursor: pointer;
+    transition: all 0.5s;
 }
 
 .auth button:focus {
     outline: none;
-    background: linear-gradient(to bottom, #8ca4d4, white);
-    color: #324b7c;
+    background:  rgba(255, 255, 190, 1);
+    color: rgb(200, 130, 70);
+    border: 1px solid rgb(200, 130, 70);
+    box-shadow: 0px 0px 15px 7px rgba(255, 230, 140, 0.6);
+    transition: all 0.3s;
 }
 
 .mobile-menu {
@@ -215,6 +228,64 @@ nav {
     border-bottom-left-radius: 30%;
     border-top-right-radius: 30%;
 }
+
+/* FOOTER-FORMATTING */
+footer {
+    background: linear-gradient(to top, black 0.5%,  rgba(18, 21, 27, 0.5));
+    display: flex;
+    height: 100px;
+    margin-top: 25px;
+}
+
+.footer-container .row {
+    height: 100%;
+    align-items: center;
+}
+
+.place {
+    color: #8ca4d4;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #8ca4d4;
+    transition: all 0.5s;
+}
+
+.contacts a:hover {
+    color: rgb(200, 130, 70);
+    transition: all 0.3s;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links a {
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+
+.social-icon {
+    background-color: #8ca4d4;
+    border-radius: 20%;
+    transition: all 0.5s;
+}
+
+.social-icon:hover {
+    background-color: rgb(200, 130, 70);
+    box-shadow: 0px 0px 10px 5px rgba(255, 220, 190, 0.6);
+    transition: all 0.5s;
+}
+
 
 /* ADAPTIVE */
 
@@ -507,17 +578,8 @@ nav {
     .a-i-second {
         padding: 0;
         margin-top: 10px;
-        /* border-radius: 0;
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%; */
         background-color: rgba(255, 255, 255, 0.8);
     }
-
-    /* .a-i-second img {
-        border-radius: 0;
-        border-bottom-left-radius: 50%;
-        border-bottom-right-radius: 50%;
-    } */
 
     .about-description h2 {
         text-align: center;
