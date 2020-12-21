@@ -55,7 +55,7 @@ let closeRegisterBtn = document.querySelector(".to-close-register-btn");
 
 closeRegisterBtn.addEventListener("click", hideRegisterModal);
 
-let registerMenuBtn = document.querySelectorAll(".reg-btn");
+let registerMenuBtn = document.querySelector(".reg-btn");
 console.log(registerMenuBtn);
 
 registerMenuBtn.addEventListener("click", showRegisterModal);
