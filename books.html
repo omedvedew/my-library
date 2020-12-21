@@ -30,7 +30,7 @@
                                 <ul>
                                     <li><a href="index.html">home</a></li>
                                     <li><a href="index.html#about-anchor">about</a></li>
-                                    <li><a href="">authors</a></li>
+                                    <li><a href="authors.html">authors</a></li>
                                     <li><a href="#up-anchor">books</a></li>
                                     <li><a href="index.html#contacts-anchor">contacts</a></li>
                                 </ul>
@@ -39,14 +39,28 @@
                                 <nav>
                                     <a href="index.html">home</a>
                                     <a href="index.html#about-anchor">about</a>
-                                    <a href="">authors</a>
+                                    <a href="authors.html">authors</a>
                                     <a href="#up-anchor">books</a>
                                     <a href="index.html#contacts-anchor">contacts</a>
                                 </nav>
                             </div>
                             <div class="col-md-3 auth">
                                 <button>Sing In</button>
-                                <button>Register</button>
+                                <button class="reg-btn">Register</button>
+
+                                <div class="register-modal">
+                                    <div class="modal-window">
+                                        <h1 class="modal-title">Fill the fields below</h1>
+                                        <input type="text" placeholder="Enter your login">
+                                        <input type="text" placeholder="Enter your e-mail">
+                                        <input type="password" placeholder="Enter your password">
+                                        <div class="to-register-btn">REGISTER</div>
+                                        <div class="to-close-register-btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="mobile-auth"></div>
                         </div>
@@ -60,7 +74,7 @@
                     <div class="col-md-12 col-xs-12">
 
                         <!-- first book -->
-                        <div class="book-item">
+                        <div class="book-item" id="jt-anchor">
                             <div class="book-img-1"></div>
                             <div class="book-description">
                                 <div class="book-title">The Silmarillion</div>
@@ -156,20 +170,110 @@
                         </div>
 
                         <!-- sixth book -->
-                        <div class="book-item">
+                        <div class="book-item" id="as-anchor">
                             <div class="book-img-6"></div>
                             <div class="book-description">
-                                <div class="book-title">The Witcher</div>
+                                <div class="book-title">The Witcher: Last Wish</div>
                                 <div class="book-description-text">
                                     The Witcher (Polish: Wiedźmin, pronounced [ˈvʲɛd͡ʑmʲin]) is a series of fantasy novels and short stories written by Polish author Andrzej Sapkowski. The series revolves around the titular "witcher", Geralt of Rivia. In Sapkowski's works, "witchers" are beast hunters who develop supernatural abilities at a young age to battle wild beasts and monsters. The books have been adapted into a film (The Hexer), two television series (The Hexer and The Witcher), a trilogy of video games (The Witcher, The Witcher 2: Assassins of Kings, and The Witcher 3: Wild Hunt), and a graphic novel series. The series of novels is known as the Witcher Saga. The short stories and novels have been translated into numerous languages, including Chinese, English, French, German, Italian, Russian, Lithuanian, Spanish and Ukrainian.
 
-                                    The saga focuses on Geralt of Rivia and Ciri, who are linked by destiny. Ciri, princess of a recently conquered country and a pawn of international politics, becomes a witcher-in-training. Geralt is drawn into a whirlwind of events in his attempts to protect her.
+                                    The books have been described as having a cult following in Poland and in Central and Eastern European countries.[1][2] The video games have been very successful; as of 28 May 2020, The Witcher series has sold over 50 million copies worldwide.
+                                </div>
+                                <div class="book-btn-cont">
+                                    <a class="to-read" href="">READ</a>
+                                </div>
+                            </div>
+                        </div>
 
-                                    Blood of Elves (orig. Krew elfów, 1994, English edition: 2008)
-                                    Time of Contempt (orig. Czas pogardy, 1995, English edition: 2013)
-                                    Baptism of Fire (orig. Chrzest ognia, 1996, English edition: 2014)
-                                    The Tower of the Swallow (orig. Wieża Jaskółki, 1997, English edition: 2016)
-                                    The Lady of the Lake (orig. Pani Jeziora, 1999, English edition: 2017)
+                        <!-- sixth-two book -->
+                        <div class="book-item">
+                            <div class="book-img-6-2"></div>
+                            <div class="book-description">
+                                <div class="book-title">The Witcher: Sword of Destiny</div>
+                                <div class="book-description-text">
+                                    Sword of Destiny (Polish: Miecz przeznaczenia) is the second (in its fictional chronology; first in Polish print) of the two collections of short stories (the other being The Last Wish), both preceding the main Witcher Saga. The stories were written by Polish fantasy author Andrzej Sapkowski. The first Polish edition was published in 1992;[1] the English edition was published in the UK by Gollancz in 2015.
+
+                                    The anthology consists of several stories, loosely linked in a chronology. The short stories in this collection take place before the events of the novels and introduce characters that become major players in the novels. The titular story, The Sword of Destiny, is the first to introduce the character of Ciri. The following story, Something More, which also features Ciri, is a direct prequel to the Witcher Saga, describing events that take place shortly before those in the Saga (such as the fall of the Kingdom of Cintra).
+                                </div>
+                                <div class="book-btn-cont">
+                                    <a class="to-read" href="">READ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- sixth-three book -->
+                        <div class="book-item">
+                            <div class="book-img-6-3"></div>
+                            <div class="book-description">
+                                <div class="book-title">The Witcher: Blood of Elves</div>
+                                <div class="book-description-text">
+                                    Blood of Elves (Polish: Krew elfów) is the first novel in the Witcher Saga written by the Polish fantasy writer Andrzej Sapkowski, first published in Poland in 1994.[1] It is a sequel to the Witcher short stories collected in the books The Last Wish (Ostatnie życzenie) and Sword of Destiny (Miecz przeznaczenia) and is followed by Time of Contempt (Czas pogardy). The book won the Janusz A. Zajdel Award in 1994[2] and the David Gemmell Legend Award in 2009.[3] An English translation was published in the United Kingdom in 2008 (Gollancz)[4] and in the United States in 2009 (Orbit).
+
+                                    About a year before the beginning of the novel (as chronicled in the preceding short story "Much More"), the Empire of Nilfgaard attacks the Kingdom of Cintra. Queen Calanthe, mortally wounded, commits suicide and her granddaughter, Cirilla, called Ciri and nicknamed the "Lion Cub of Cintra" manages to flee from the burning capital city. Emhyr var Emreis, Emperor of Nilfgaard, sends his spies to find her. He knows that this young girl has great importance, not only because of her royal lineage, but also because of her elven blood which gives her immense magical potential. The war ends with Nilfgaard's defeat by a coalition of the Northern Kingdoms, though the Empire retains much of its power.
+                                </div>
+                                <div class="book-btn-cont">
+                                    <a class="to-read" href="">READ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- sixth-four book -->
+                        <div class="book-item">
+                            <div class="book-img-6-4"></div>
+                            <div class="book-description">
+                                <div class="book-title">The Witcher: Time of Contempt</div>
+                                <div class="book-description-text">
+                                    Time of Contempt (Polish original title: Czas pogardy, early title was translated less literally as Time of Anger) is the second novel in the Witcher Saga written by Polish fantasy writer Andrzej Sapkowski, first published 1995 in Polish, and 2013 in English (under the title The Time of Contempt). It is a sequel to the first Witcher novel Blood of Elves (Krew elfów) and is followed by Baptism of Fire (Chrzest ognia).
+
+                                    Following their secret conclave (in Blood of Elves), the monarchs of the Northern Kingdoms are secretly preparing to create a pretext for war with Nilfgaard, not knowing that the Emperor of Nilfgaard is aware of their plans and preparing his own.
+                                </div>
+                                <div class="book-btn-cont">
+                                    <a class="to-read" href="">READ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- sixth-five book -->
+                        <div class="book-item">
+                            <div class="book-img-6-5"></div>
+                            <div class="book-description">
+                                <div class="book-title">The Witcher: Baptism of Fire</div>
+                                <div class="book-description-text">
+                                    Baptism of Fire (Polish original title: Chrzest ognia) is the third novel in the Witcher Saga written by Polish fantasy writer Andrzej Sapkowski, first published in 1996 in Polish and in English in 2014. It is a sequel to the second Witcher novel Time of Contempt (Czas pogardy) and is followed by The Tower of the Swallow (Wieża Jaskółki).
+
+                                    In the aftermath of the Thanedd incident, war is still raging between Nilfgaard and the Northern Kingdoms. The elf sorceress Francesca Findabair has been installed by Nilfgaardian Emperor Emhyr as client queen of Dol Blathanna. In exchange for her throne, however, she is obliged to withhold aid from the elven Scoia'tael commandos, who supported Nilfgaard's initial advance into the North, but now find themselves alone and unsupported as the Northern Kingdoms retaliate.
+                                </div>
+                                <div class="book-btn-cont">
+                                    <a class="to-read" href="">READ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- sixth-six book -->
+                        <div class="book-item">
+                            <div class="book-img-6-6"></div>
+                            <div class="book-description">
+                                <div class="book-title">The Witcher: The Tower of the Swallow</div>
+                                <div class="book-description-text">
+                                    The Tower of the Swallow, published as The Tower of Swallows in the United States (Polish original title: Wieża Jaskółki) is the fourth novel in the Witcher Saga written by Polish fantasy writer Andrzej Sapkowski, first published in Poland in 1997. It is a sequel to the third Witcher novel Baptism of Fire (Chrzest ognia) and is followed by the final entry in the series, The Lady of the Lake (Pani Jeziora).
+
+                                    Vysogota, an old philosopher living alone in the Pereplut swamp, comes upon an injured Ciri near his retreat and takes her in, caring for her until she is ready to continue her journey. During her recovery, Ciri recounts the events of the last few months, in which she was parted from a gang of young bandits known as "the Rats" and captured by a cruel bounty hunter working for Nilfgaard, named Leo Bonhart. After remembering her connection to Cintra, Ciri - having been using the name "Falka" - initially intended to return to her homeland and claim her birthright, dispelling the lie that the Empire has found a girl they claim is Ciri, who is actually a fake. Instead of doing so, however, she decided to return and help the Rats after learning Bonhart was pursuing them. She arrives at the village too late, and sees Bonhart kill her friends, including her lover, Mistle. Ciri tries to fight Bonhart, but he is too skilled and defeats her. Instead of killing her as instructed, he intends to make a profit off of her, while also seeking to prove her true identity as a witcher and a princess of Cintra, which he suspects but cannot confirm. He takes her to the home of a boorish nobleman named Houvenaghel, who runs an arena in which animals and monsters - and sometimes people - fight for sport. Here, Bonhart has Ciri fight for her life in the arena, proving her witcher skills and confirming who she really is.
+                                </div>
+                                <div class="book-btn-cont">
+                                    <a class="to-read" href="">READ</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- sixth-seven book -->
+                        <div class="book-item">
+                            <div class="book-img-6-7"></div>
+                            <div class="book-description">
+                                <div class="book-title">The Witcher: The Lady of the Lake</div>
+                                <div class="book-description-text">
+                                    The Lady of the Lake (Polish original title: Pani Jeziora) is the fifth and final novel in the Witcher Saga written by Polish fantasy writer Andrzej Sapkowski, first published in Poland in 1999. It is a sequel to the fourth Witcher novel, The Tower of Swallows (Wieża Jaskółki).
+
+                                    The story opens with Ciri bathing in a lake from another world. As she does so, Sir Galahad, King Arthur's knight, stumbles upon her. After mistaking her for the Lady of the Lake, they then talk and Ciri recounts her story, but warns him it doesn't have a happy ending. She is shown sad and coping with her pain, after confessing to Galahad that the blood of her clothes is because in recent times, she tried to save her friends but they died in her arms.
                                 </div>
                                 <div class="book-btn-cont">
                                     <a class="to-read" href="">READ</a>
@@ -178,7 +282,7 @@
                         </div>
 
                         <!-- seventh book -->
-                        <div class="book-item">
+                        <div class="book-item" id="db-anchor">
                             <div class="book-img-7"></div>
                             <div class="book-description">
                                 <div class="book-title">Angels & Demons</div>
@@ -262,6 +366,6 @@
             </div>
         </div>
     </div>
-    
+    <script src="app.js"></script>
 </body>
 </html>

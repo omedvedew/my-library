@@ -30,7 +30,7 @@
                                 <ul>
                                     <li><a href="#home-anchor">home</a></li>
                                     <li><a href="#about-anchor">about</a></li>
-                                    <li><a href="">authors</a></li>
+                                    <li><a href="authors.html">authors</a></li>
                                     <li><a href="books.html">books</a></li>
                                     <li><a href="#contacts-anchor">contacts</a></li>
                                 </ul>
@@ -39,14 +39,28 @@
                                 <nav>
                                     <a href="#home-anchor">home</a>
                                     <a href="#about-anchor">about</a>
-                                    <a href="">authors</a>
+                                    <a href="authors.html">authors</a>
                                     <a href="books.html">books</a>
                                     <a href="#contacts-anchor">contacts</a>
                                 </nav>
                             </div>
                             <div class="col-md-3 auth">
                                 <button>Sing In</button>
-                                <button>Register</button>
+                                <button class="reg-btn">Register</button>
+
+                                <div class="register-modal">
+                                    <div class="modal-window">
+                                        <h1 class="modal-title">Fill the fields below</h1>
+                                        <input type="text" placeholder="Enter your login">
+                                        <input type="text" placeholder="Enter your e-mail">
+                                        <input type="password" placeholder="Enter your password">
+                                        <div class="to-register-btn">REGISTER</div>
+                                        <div class="to-close-register-btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="mobile-auth"></div>
                         </div>
@@ -65,6 +79,17 @@
                         </div>
                         <div class="col-md-6 col-xs-12 cover-description">
                             <p>"...Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut in odit impedit. Sunt repudiandae impedit voluptates et nam id quae voluptatum vitae tempora doloribus adipisci, facilis cupiditate aliquid, inventore ex..."</p>
+                        </div>
+                    </div>
+                    <div class="cover-modal">
+                        <div class="modal-window">
+                            <h1 class="modal-title">CONGRATULATIONS!</h1>
+                            <p class="modal-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis perferendis ad nisi sit sint est. Porro rerum explicabo sequi eum, assumenda laboriosam veniam a totam eaque velit repellat id fugit?</p>
+                            <button class="to-register-btn">REGISTER</button>
+                            <div class="to-close-btn">
+                                <span></span>
+                                <span></span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -105,7 +130,7 @@
                         </div>
                         <div class="col-md-7 col-xs-12 col-sm-6 about-image a-i-second">
                             <div class="authors-btn-container">
-                                <a class="to-authors" href="">authors</a>
+                                <a class="to-authors" href="authors.html">authors</a>
                             </div>
                         </div>
                     </div>
@@ -146,5 +171,6 @@
             </div>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 </html>

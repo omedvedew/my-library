@@ -99,6 +99,7 @@ nav {
     height: 100%;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
 }
 
 .auth button {
@@ -277,7 +278,8 @@ nav {
 [class*="to-"]:hover {
     background-color: rgba(255, 255, 190, 1);
     color: rgb(200, 130, 70);
-    border: transparent;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
     box-shadow: 0px 0px 30px 15px rgba(255, 230, 140, 0.6);
     transition: all 0.5s;
 }
@@ -393,6 +395,30 @@ footer {
     background-image: url(images/witcher.jpg);
 }
 
+.book-img-6-2 {
+    background-image: url(images/Sword_of_Destiny.jpg);
+}
+
+.book-img-6-3 {
+    background-image: url(images/Blood_of_Elves.jpg);
+}
+
+.book-img-6-4 {
+    background-image: url(images/Time_of_Contempt.jpg);
+}
+
+.book-img-6-5 {
+    background-image: url(images/Baptism_of_Fire.jpg);
+}
+
+.book-img-6-6 {
+    background-image: url(images/The_Tower_of_the_Swallow.jpg);
+}
+
+.book-img-6-7 {
+    background-image: url(images/The_Lady_of_the_Lake.jpg);
+}
+
 .book-img-7 {
     background-image: url(images/AngelsAndDemons.jpg);
 }
@@ -412,6 +438,202 @@ footer {
 .book-img-11 {
     background-image: url(images/Origin.jpg);
 }
+
+.book-img-author-1 {
+    background-image: url(images/jt.jpg);
+}
+
+.book-img-author-2 {
+    background-image: url(images/as.jpg);
+}
+
+.book-img-author-3 {
+    background-image: url(images/db.jpg);
+}
+
+
+
+
+/* MODALS */
+/* cover-modal */
+.cover-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    visibility: hidden;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.cover-modal-active {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.modal-window {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 50%;
+    max-width: 50%;
+    border-right: 15px solid  rgba(255, 255, 255, 0.6);
+    border-left: 15px solid  rgba(255, 255, 255, 0.6);
+    border-top-left-radius: 30%;
+    border-bottom-left-radius: 50%;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 50%;
+    padding: 25px;
+    color: white;
+}
+
+.modal-title {
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.modal-text {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.to-register-btn {
+    background-color: transparent;
+    border-top: none;
+    border-bottom: none;
+    width: 130px;
+    margin-bottom: 15px;
+    cursor: default;
+}
+
+.to-close-btn {
+    opacity: 0.15;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-left: 2px solid #8ca4d4;
+    border-right: 2px solid #8ca4d4;
+}
+
+.to-close-btn:hover {
+    opacity: 1;
+    background-color: transparent;
+    box-shadow: none;
+    border-left: 2px solid #8ca4d4;
+    border-right: 2px solid #8ca4d4;
+}
+
+.to-close-btn span {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #8ca4d4;
+}
+
+.to-close-btn span:nth-child(1) {
+    transform: rotate(225deg);
+}
+
+.to-close-btn span:nth-child(2) {
+    transform: rotate(-225deg);
+}
+
+
+/* REGISTER-MODAL */
+.register-modal {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    visibility: hidden;
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 110;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.register-modal .modal-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.register-modal-active {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.to-close-register-btn {
+    opacity: 0.15;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-left: 2px solid #8ca4d4;
+    border-right: 2px solid #8ca4d4;
+}
+
+.to-close-register-btn:hover {
+    opacity: 1;
+    background-color: transparent;
+    box-shadow: none;
+    border-left: 2px solid #8ca4d4;
+    border-right: 2px solid #8ca4d4;
+}
+
+.to-close-register-btn span {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #8ca4d4;
+}
+
+.to-close-register-btn span:nth-child(1) {
+    transform: rotate(225deg);
+}
+
+.to-close-register-btn span:nth-child(2) {
+    transform: rotate(-225deg);
+}
+
+.register-modal input {
+    margin-bottom: 10px;
+    height: 40px;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 25%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #5773ac;
+}
+
+.register-modal input:focus {
+    outline: none;
+}
+
+
 
 /* ADAPTIVE */
 
@@ -572,6 +794,26 @@ footer {
     .up-btn {
         display: none;
     }
+
+    .modal-window {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    .register-modal {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+
+    .register-modal .modal-window {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
 }
 
 /* laptop */
@@ -640,6 +882,23 @@ footer {
         opacity: 1;
         transition: all 0.5s;
     }
+
+    .modal-window {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .register-modal {
+        position: absolute;
+        top: 60px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: fit-content;
+        border-top-left-radius: 30%;
+        border-top-right-radius: 30%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
 }
 
 /* desktop */
@@ -673,6 +932,7 @@ footer {
 
     .mobile-menu ul {
         opacity: 0;
+        visibility: hidden;
         z-index: 1;
         position: absolute;
         top: 80px;
@@ -769,6 +1029,7 @@ footer {
     }
 
     #check:checked + .burger ~ ul {
+        visibility: visible;
         opacity: 1;
         transition: all 1s;
     }
@@ -802,12 +1063,17 @@ footer {
     }
 
     .auth {
-        display: none;
+        display: flex;
+        position: relative;
+        width: 100%;
+        justify-content: space-between;
+        top: -25px;
     }
 
     .logo a {
         font-size: 24px;
         margin-bottom: 7px;
+        margin-top: 10px;
     }
 
     .cover-container-circle {
@@ -949,6 +1215,26 @@ footer {
 
     .book-item:first-child {
         margin-top: 25px;
+    }
+
+    .modal-window {
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+
+    .register-modal {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+
+    .register-modal .modal-window {
+        flex: 0 0 90%;
+        max-width: 90%;
     }
 }
 
