@@ -1231,6 +1231,11 @@ footer {
         align-items: center;
     }
 
+    header {
+        position: sticky;
+        top: 0;
+    }
+
     .menu {
         display: none;
     }
