@@ -45,7 +45,7 @@
                                 </nav>
                             </div>
                             <div class="col-md-3 auth">
-                                <button>Sing In</button>
+                                <button class="sign-btn">Sing In</button>
                                 <button class="reg-btn">Register</button>
 
                                 <div class="register-modal">
@@ -61,6 +61,20 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="sign-in-modal">
+                                    <div class="modal-window">
+                                        <h1 class="modal-title">Fill the fields below</h1>
+                                        <input type="text" placeholder="Enter your login">
+                                        <input type="text" placeholder="Enter your e-mail">
+                                        <input type="password" placeholder="Enter your password">
+                                        <div class="to-sign-in-btn">SIGN-IN</div>
+                                        <div class="to-close-sign-in-btn">
+                                            <span></span>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="mobile-auth"></div>
                         </div>
@@ -68,6 +82,22 @@
                 </div>
             </div>
         </header>
+
+        <!-- cover-modal -->
+        <div>
+            <div class="cover-modal">
+                <div class="modal-window">
+                    <h1 class="modal-title">CONGRATULATIONS!</h1>
+                    <p class="modal-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis perferendis ad nisi sit sint est. Porro rerum explicabo sequi eum, assumenda laboriosam veniam a totam eaque velit repellat id fugit?</p>
+                    <button class="to-register-btn">REGISTER</button>
+                    <div class="to-close-btn">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="books-container">
             <div class="container">
                 <div class="row">
@@ -132,5 +162,83 @@
             </div>
         </div>
     </div>
-    <script src="app.js"></script>
+    <script>
+        // COVER-MODAL
+
+        let modal = document.querySelector(".cover-modal");
+
+        function showCoverModal() {
+            modal.classList.add("cover-modal-active");
+        };
+
+        let closeBtn = document.querySelector(".to-close-btn");
+
+        function hideCoverModal() {
+            modal.classList.remove("cover-modal-active");
+        };
+
+        closeBtn.addEventListener("click", hideCoverModal);
+
+
+        modal.addEventListener("click", function(e) {
+            if (e.target === modal) {
+                hideCoverModal();
+            };
+        });
+
+        window.setTimeout(showCoverModal, 30000);
+
+
+        // register-modal
+
+        let registerModal = document.querySelector(".register-modal");
+        console.log(registerModal);
+
+        let registerBtn = document.querySelectorAll(".to-register-btn");
+        console.log(registerBtn);
+
+        function showRegisterModal() {
+            registerModal.classList.add("register-modal-active");
+            hideSignInModal();
+        };
+
+        function hideRegisterModal() {
+            registerModal.classList.remove("register-modal-active");
+        };
+
+        registerBtn.forEach((btn) => {
+            btn.addEventListener("click", showRegisterModal);
+        });
+        registerBtn.forEach((btn) => {
+            btn.addEventListener("click", hideCoverModal);
+        });
+
+        let closeRegisterBtn = document.querySelector(".to-close-register-btn");
+
+        closeRegisterBtn.addEventListener("click", hideRegisterModal);
+
+        let registerMenuBtn = document.querySelectorAll(".reg-btn");
+        console.log(registerMenuBtn);
+
+        registerMenuBtn.forEach(btn => {
+            btn.addEventListener("click", showRegisterModal);
+        });
+
+        let signInModal = document.querySelector(".sign-in-modal");
+        let closeSignInModalBtn = document.querySelector(".to-close-sign-in-btn");
+        let signInMenuBtn = document.querySelector(".sign-btn");
+
+        function showSignInModal() {
+            signInModal.classList.add("sign-in-modal-active");
+            hideRegisterModal();
+        };
+
+        function hideSignInModal() {
+            signInModal.classList.remove("sign-in-modal-active");
+        };
+
+        signInMenuBtn.addEventListener("click", showSignInModal);
+
+        closeSignInModalBtn.addEventListener("click", hideSignInModal);
+    </script>
 </body>

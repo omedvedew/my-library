@@ -38,6 +38,7 @@ console.log(registerBtn);
 
 function showRegisterModal() {
     registerModal.classList.add("register-modal-active");
+    hideSignInModal();
 };
 
 function hideRegisterModal() {
@@ -55,13 +56,30 @@ let closeRegisterBtn = document.querySelector(".to-close-register-btn");
 
 closeRegisterBtn.addEventListener("click", hideRegisterModal);
 
-let registerMenuBtn = document.querySelector(".reg-btn");
+let registerMenuBtn = document.querySelectorAll(".reg-btn");
 console.log(registerMenuBtn);
 
-registerMenuBtn.addEventListener("click", showRegisterModal);
+registerMenuBtn.forEach(btn => {
+    btn.addEventListener("click", showRegisterModal);
+})
 
-registerModal.addEventListener("click", function(e) {
-    if (e.target === registerModal) {
-        hideRegisterModal();
-    };
-});
+// SIGN-IN
+let signInModal = document.querySelector(".sign-in-modal");
+let closeSignInModalBtn = document.querySelector(".to-close-sign-in-btn");
+let signInMenuBtn = document.querySelector(".sign-btn");
+
+function showSignInModal() {
+    signInModal.classList.add("sign-in-modal-active");
+    hideRegisterModal();
+};
+
+function hideSignInModal() {
+    signInModal.classList.remove("sign-in-modal-active");
+};
+
+signInMenuBtn.addEventListener("click", showSignInModal);
+
+closeSignInModalBtn.addEventListener("click", hideSignInModal);
+
+
+

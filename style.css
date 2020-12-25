@@ -633,6 +633,91 @@ footer {
     outline: none;
 }
 
+/* SIGN-IN-MODAL */
+.sign-in-modal {
+    position: absolute;
+    top: 60px;
+    display: flex;
+    visibility: hidden;
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.95);
+    z-index: 110;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.sign-in-modal .modal-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+.sign-in-modal-active {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.to-sign-in-btn {
+    margin-bottom: 15px;
+}
+
+.to-close-sign-in-btn {
+    opacity: 0.15;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    border-left: 2px solid #8ca4d4;
+    border-right: 2px solid #8ca4d4;
+}
+
+.to-close-sign-in-btn:hover {
+    opacity: 1;
+    background-color: transparent;
+    box-shadow: none;
+    border-left: 2px solid #8ca4d4;
+    border-right: 2px solid #8ca4d4;
+}
+
+.to-close-sign-in-btn span {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 1px;
+    width: 15px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #8ca4d4;
+}
+
+.to-close-sign-in-btn span:nth-child(1) {
+    transform: rotate(225deg);
+}
+
+.to-close-sign-in-btn span:nth-child(2) {
+    transform: rotate(-225deg);
+}
+
+.sign-in-modal input {
+    margin-bottom: 10px;
+    height: 40px;
+    font-family: 'Cinzel', serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    border-radius: 25%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #5773ac;
+}
+
+.sign-in-modal input:focus {
+    outline: none;
+}
+
 
 
 /* ADAPTIVE */
@@ -814,6 +899,11 @@ footer {
         flex: 0 0 90%;
         max-width: 90%;
     }
+
+    .sign-in-modal .modal-window {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
 }
 
 /* laptop */
@@ -889,6 +979,18 @@ footer {
     }
 
     .register-modal {
+        position: absolute;
+        top: 60px;
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: fit-content;
+        border-top-left-radius: 30%;
+        border-top-right-radius: 30%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .sign-in-modal {
         position: absolute;
         top: 60px;
         flex: 0 0 100%;
@@ -1233,6 +1335,21 @@ footer {
     }
 
     .register-modal .modal-window {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
+    .sign-in-modal {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        margin: 0 auto;
+        background-color: rgba(0, 0, 0, 0.95);
+    }
+
+    .sign-in-modal .modal-window {
         flex: 0 0 90%;
         max-width: 90%;
     }
