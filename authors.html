@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Great+Vibes&family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+
 </head>
 <body>
     <div class="big-cover">
@@ -105,7 +109,27 @@
 
                         <!-- first author -->
                         <div class="book-item">
-                            <div class="book-img-author-1" id="jt-anchor"></div>
+                            
+                            <!-- SLIDER -->
+                            <div class="slider col-sm-12" id="jt-anchor">
+                                <div class="swiper-container">
+                                    
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide"><img src="images/jt.jpg"></div>
+                                        <div class="swiper-slide"><img src="images/jt-2.jpg"></div>
+                                        <div class="swiper-slide"><img src="images/jt-3.jpg"></div>
+                                    </div>
+                                                                    
+                                    <!-- navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                
+                                    <!-- scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+
                             <div class="book-description">
                                 <div class="book-title">John Ronald Reuel Tolkien</div>
                                 <div class="book-description-text">
@@ -125,7 +149,27 @@
 
                         <!-- second author -->
                         <div class="book-item">
-                            <div class="book-img-author-2" id="as-anchor"></div>
+
+                            <!-- SLIDER -->
+                            <div class="slider col-sm-12" id="as-anchor">
+                                <div class="swiper-container">
+                                    
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide"><img src="images/as.jpg"></div>
+                                        <div class="swiper-slide"><img src="images/as-2.jpg"></div>
+                                        <div class="swiper-slide"><img src="images/as-3.jpg"></div>
+                                    </div>
+                                                                    
+                                    <!-- navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                
+                                    <!-- scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+
                             <div class="book-description">
                                 <div class="book-title">Andrzej Sapkowski</div>
                                 <div class="book-description-text">
@@ -143,7 +187,27 @@
 
                         <!-- third author -->
                         <div class="book-item">
-                            <div class="book-img-author-3" id="db-anchor"></div>
+
+                            <!-- SLIDER -->
+                            <div class="slider col-sm-12" id="db-anchor">
+                                <div class="swiper-container">
+                                    
+                                    <div class="swiper-wrapper">
+                                        <!-- Slides -->
+                                        <div class="swiper-slide"><img src="images/db.jpg"></div>
+                                        <div class="swiper-slide"><img src="images/db-2.jpg"></div>
+                                        <div class="swiper-slide"><img src="images/db-3.jpeg"></div>
+                                    </div>
+                                                                    
+                                    <!-- navigation buttons -->
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                
+                                    <!-- scrollbar -->
+                                    <div class="swiper-scrollbar"></div>
+                                </div>
+                            </div>
+
                             <div class="book-description">
                                 <div class="book-title">Daniel Gerhard Brown</div>
                                 <div class="book-description-text">
@@ -240,5 +304,24 @@
         signInMenuBtn.addEventListener("click", showSignInModal);
 
         closeSignInModalBtn.addEventListener("click", hideSignInModal);
+    </script>
+
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        })
     </script>
 </body>

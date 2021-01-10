@@ -774,6 +774,45 @@ footer {
     transition: all 0.3s ease-in-out;
 }
 
+/* SLIDER */
+.swiper-container {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 300px;
+    height: 350px;
+}
+
+.swiper-container-horizontal > .swiper-scrollbar {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.swiper-scrollbar-drag {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.slider {
+    display: flex;
+    flex: 0 0 30%;
+    max-width: 30%;
+    margin: 15px;
+    z-index: 0;
+}
+
+.slider img {
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+[class*="swiper-button"] {
+    transition: all 0.3s ease-in-out;
+}
+
+[class*="swiper-button"]:hover {
+    transition: all 0.3s ease-in-out;
+    color: rgb(200, 130, 70);
+}
+
 
 /* ADAPTIVE */
 
@@ -1444,6 +1483,11 @@ footer {
 
     .tab-item-content {
         margin-left: 0px;
+    }
+
+    .swiper-container {
+        width: 180px;
+        height: 250px;
     }
 
 }
