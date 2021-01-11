@@ -101,6 +101,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     position: relative;
+    z-index: 105;
 }
 
 .auth button {
@@ -134,6 +135,7 @@ nav {
 
 .mobile-auth {
     display: none;
+    z-index: 105;
 }
 
 /* MAIN-FORMATTING */
