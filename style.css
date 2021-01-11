@@ -1143,17 +1143,17 @@ footer {
     }
 
     .swiper-container {
-        width: 250px;
+        width: 200px;
     }
 
     .slider img {
         display: flex;
         flex: 0 0 100%;
-        width: 250px;
+        width: 200px;
     }
 
     .swiper-slide {
-        width: 250px;
+        width: 200px;
     }
 
     .mobile-menu {
